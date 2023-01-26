@@ -25,7 +25,7 @@
 
 
 ## Weekly Assignments
-### - WA1 <a href="//https://github.com/ellaberrend/ellaberrend.github.io">WA1</a>
+### - WA1 <a href="https://github.com/ellaberrend/ellaberrend.github.io">WA1</a>
 ### - WA2
 ### - WA3
 ### - WA4
