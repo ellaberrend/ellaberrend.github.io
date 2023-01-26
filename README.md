@@ -7,7 +7,7 @@
 
 
 ## In-Class Assignments
-### - ICA1 <a href="//https://github.com/ellaberrend/ellaberrend.github.io.git">ICA1</a>
+### - ICA1
 ### - ICA2
 ### - ICA3
 ### - ICA4
@@ -25,7 +25,7 @@
 
 
 ## Weekly Assignments
-### - WA1
+### - WA1 <a href="//https://github.com/ellaberrend/ellaberrend.github.io.git">WA1</a>
 ### - WA2
 ### - WA3
 ### - WA4
