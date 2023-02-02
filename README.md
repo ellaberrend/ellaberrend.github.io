@@ -9,7 +9,7 @@
 ## In-Class Assignments
 ### - ICA1
 ### - ICA2
-### -  <a hreg="https://github.com/ellaberrend/ellaberrend.github.io/"> ICA2</a>
+### -  <a href="https://github.com/ellaberrend/ellaberrend.github.io/"> ICA2</a>
 ### - ICA4
 ### - ICA5
 ### - ICA6
