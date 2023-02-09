@@ -31,8 +31,6 @@ body {
   .card header {
     background-image: linear-gradient(to bottom,rgba(0,0,0,0.1), rgba(0,0,0,0));
     border-radius: 1.5em 1.5em 0 0;
-    max-height: 3 em;
-    padding: 1 em;
   }
   
   .card footer {
@@ -56,21 +54,21 @@ body {
     font-size: 2 em;
     margin: 0;
     line-height: 1.5 em;
-
   }
 
   p{
     margin: 0;
   }
 
+
+ footer p {
+    font-size: 1.5 em;
+    line-height: 1.5 em;
+  }
+
   article {
     height: 12 em;
     background-color:rgba (0,0,0,0.1);
-  }
-
-  footer p {
-    font-size: 1.5 em;
-    line-height: 1.5 em;
   }
 
   article p{
