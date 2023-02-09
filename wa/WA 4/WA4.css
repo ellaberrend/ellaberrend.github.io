@@ -50,14 +50,14 @@ body {
 
   }
 
-  h2{
+  .headandfoot h2{
     font-size: 2 em;
-    margin: 0;
     line-height: 1.5 em;
   }
 
-  p{
-    margin: 0;
+  .headandfoot p{
+    font-size: 1.5 em;
+    line-height: 2 em;
   }
 
 
@@ -68,7 +68,7 @@ body {
 
   article {
     height: 12 em;
-    background-color:rgba (0,0,0,0.1);
+    background-color:rgba (0,0,0,0.2);
   }
 
   article p{
