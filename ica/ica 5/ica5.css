@@ -26,8 +26,8 @@
   
   h1 {
     position: absolute;
-    top: 12mm;
-    left: 20mm;
+    top: 5mm;
+    left: 1mm;
     width: 128px;
     height: 128px;
     font-size: 20px;
@@ -37,9 +37,21 @@
     color: white;
     text-shadow: 1px 1px 1px black;
   }
-
-  body {
-    background-image: image("top-image.png")
+  .img {
+    position: absolute;
+    top: 12mm;
+    left: 20mm;
+    width: 128px;
+    height: 128px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    filter:brightness (120%);
+    filter:contrast (120)%;
+    filter: drop-shadow (10px 10px 10 px black);
   }
-  
+
+.img footer{
+
+}
   /* Your CSS below here */
