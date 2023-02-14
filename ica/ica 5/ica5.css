@@ -47,11 +47,8 @@
     text-align: center;
     padding: 44px 0;
     filter:brightness (120%);
-    filter:contrast (120)%;
+    filter:contrast (120%);
     filter: drop-shadow (10px 10px 10 px black);
   }
 
-.img footer{
-
-}
   /* Your CSS below here */
