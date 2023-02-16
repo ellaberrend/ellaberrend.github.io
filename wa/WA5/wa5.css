@@ -1,5 +1,48 @@
-{
-    box-sizing: border-box;
-  }
+.container{
+    position:relative;
+    text-align: center;
+    color: white;
+}
+ .parent{
+    position: relative;
+    top: 0;
+    bottom: 0;
+ }
+ 
+ .coffeepic{
+    max-width:50%;
+    position: absolute;
+    top:0;
+    left:0;
+ }
 
+ .pinkbox{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 22%;
+ }
 
+.pinkbox2{
+    position:absolute;
+    top: 680px;
+    right: 630px;
+    width: 25%;
+}
+.top-left{
+    position: absolute;
+    top:70px;
+    left:50px;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+}
+
+.top-right{
+    position:absolute;
+    top:740px;
+    right:655px;
+    font-size: 22pt;
+    text-align:center;
+    color: white;
+}
