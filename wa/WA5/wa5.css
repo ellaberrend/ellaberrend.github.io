@@ -30,22 +30,18 @@
     width: 25%;
 }
 .top-left{
-    position: static;
+    position: relative;
     top:70px;
-    left:50px;
+    left:-445px;
     font-size: 20pt;
     text-align: center;
     color: white;
 }
-
 .top-right{
-    position:static;
-    top:740px;
-    right:655px;
+    position:relative;
+    top:710px;
+    right:183px;
     font-size: 22pt;
     text-align:center;
     color: white;
-}
-@media(max-width: 800px){
-
 }
