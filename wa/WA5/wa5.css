@@ -4,7 +4,7 @@
     color: white;
 }
  .parent{
-    position: static;
+    position: relative;
     top: 0;
     bottom: 0;
  }
@@ -30,7 +30,7 @@
     width: 25%;
 }
 .top-left{
-    position: absolute;
+    position: static;
     top:70px;
     left:50px;
     font-size: 20pt;
@@ -39,7 +39,7 @@
 }
 
 .top-right{
-    position:absolute;
+    position:static;
     top:740px;
     right:655px;
     font-size: 22pt;
