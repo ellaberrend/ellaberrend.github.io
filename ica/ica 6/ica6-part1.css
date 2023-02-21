@@ -9,8 +9,12 @@ body{
     border-width: 3px;
     border-radius:10px;
     background-color: mediumseagreen;
-    position:relative;
+    position:absolute;
 }
+#text1{
+    overflow-wrap: break word;
+}
+
 
 #box2{
     width: 73vw;
