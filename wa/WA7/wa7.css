@@ -22,10 +22,6 @@ nav a{
     color:black;
 }
 
-#pinkcat:hover{
-    transition: width 2s, height 4s;
-
-}
 
 img{
     width:30vw;
@@ -50,4 +46,13 @@ img{
     animation-duration: 2s;
     animation-direction: alternate;
 }
-    
+
+
+#img{
+    position:relative;
+    -webkit-transition:width 1s;
+    transition: width 1s;
+}
+#img:hover{
+    width:500px;
+}
