@@ -3,7 +3,10 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: white;
+    font-family: papyrus;
 }
+
+
 nav{
     height: 50vh;
     display:flex;
@@ -19,6 +22,10 @@ nav a{
     color:black;
 }
 
+#pinkcat:hover{
+    transition: width 2s, height 4s;
+
+}
 
 img{
     width:30vw;
@@ -26,7 +33,7 @@ img{
 }
 
 #red-ball{
-    background-color: blueviolet;
+    background-color: pink;
     width: 20px;
     height:20px;
     border-radius: 50%;
@@ -34,3 +41,13 @@ img{
     left:5vw;
     top:0;
 }
+
+#red-ball:hover{
+    position: relative;
+    background-color: magenta;
+    animation-name:red-ball move;
+    animation-iteration-count: infinitive;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+    
