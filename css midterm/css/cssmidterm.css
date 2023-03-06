@@ -1,0 +1,84 @@
+
+body {
+    background-color: #FFC0CB;
+  }
+
+ nav{
+    height: 50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 20px;
+    background-color:#FF69B4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300px;
+ } 
+ 
+ nav a{
+    width: 10vw;
+    text-align: center;
+    text-decoration:none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300px;
+ }
+
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    font-size: 36px;
+    color: white;
+    align-items: center;
+    text-align: center;
+
+}
+  
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+  
+  
+  p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+  }
+  
+  a {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #FF69B4;
+    text-align: center;
+  }
+  
+
+  .main-content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  }
+  
+ 
+  .header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+
+  .subheader {
+    margin-top: 50px;
+  }
+
+  .link {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
