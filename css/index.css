@@ -9,7 +9,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     height: 20px;
-    background-color:#FF69B4;
+    background-color:white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300px;
  } 
@@ -18,16 +18,15 @@ body {
     width: 10vw;
     text-align: center;
     text-decoration:none;
-    color: white;
+    color: #FF69B4;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300px;
  }
 
-
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
     font-size: 36px;
-    color: white;
+    color: #FF69B4;
     align-items: center;
     text-align: center;
 
@@ -36,8 +35,8 @@ h1 {
 
 h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 24px;
-    color: white;
+    font-size: 32px;
+    color: #FF69B4;
     text-align: center;
 }
   
