@@ -17,16 +17,72 @@
         p{
             font-size: 50px;
         }
+
+        #button2{
+            border: 3px solid blue;
+            border-radius: 10px;
+            background-color:aquamarine;
+            padding: 25px 50px;
+            width: 400px;
+        }
     </style>
 </head>
 <body>
-    <div id+"button">
+    <div id="button">
         <p>Click Me!</p>
+    </div>
+    <br>
+    <div id="button2">
+        <p>Click Me Instead!</p>
+    </div>
+
+    <br>
+    <div class="form">
+        <label for="guessField">Enter a guess: </label>
+        <input type="number" min="1" max="100" required id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
     </div>
 
     <script>
         console.log("Hello, World!");
+        let btn = document.querySelector("#button");
+        //console.log(button);
+        let btn2 = document.querySelector("#button2");
+
+        function changeBtn() {
+            // console.log("This worked!");
+            btn.textContent = "TEST";
+            btn.style.backgroundColor = "darkmagenta";
+            btn.style.border = "2px solid magenta";
+            btn.style.color = "white";
+
+        }
+
+        function changeBtn2() {
+            btn2.textContent = "Ur dumb";
+            btn.style.backgroundColor = "teal";
+            btn.style.border = "2px solid blue";
+            btn.style.color = "white";
+        }
+
+        btn.addEventListener('click',changeBtn);
+
+        btn2.addEventListener('click', changeBtn2);
+
+        function checkGuess(){
+            //alert('I am a placeholder');
+            //alert(userGuess.value);
+            
+            let value = userGuess.value * 2;
+            alert(value);
+        }
+
+        let guessBtn = document.querySelector(".guessSubmit");
+        let userGuess = document.querySelector(".guessField");
+        // console.log(guessBtn);
+        guessBtn.addEventListener('click', checkGuess);
         
+
     </script>
 </body>
 </html>
