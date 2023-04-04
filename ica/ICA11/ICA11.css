@@ -86,6 +86,8 @@ html {
     color: #666666;
     cursor: not-allowed;
   }
+
+
   
   @media screen and (max-width: 600px) {
     .app {
@@ -95,3 +97,4 @@ html {
       font-size: 18px;
     }
   }
+
