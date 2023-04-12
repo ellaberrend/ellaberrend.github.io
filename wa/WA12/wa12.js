@@ -26,7 +26,7 @@ var Bill = {
 //Step 2
 
 var techStars = {
-    companyName: "Tech Stars",
+    companyName: "TechStars",
     website: "www.techstars.site",
     employees: [Sam, Mary, Bill]
 };
