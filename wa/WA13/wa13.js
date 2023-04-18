@@ -1,74 +1,43 @@
+const volumeControl = document.getElementById("volume");
+const volumeLevel = document.getElementById("volume-level");
+const errorText = document.getElementById("error-text");
 
-
-function check() {
-    console.log('test');
-}
-
-function submit() {
-    alert(output.textContent);
-}
-
-function reset() {
-    outputInt = 0;
-    output.textContent = outputInt;
-}
-
-function minus() {
-    if (outputInt > 0) {
-    outputInt -=1;
-    output.textContent = outputInt; }
-    
-}
-
-function plus() {
-    if (outputInt < 100) {
-    outputInt +=1;
-    output.textContent = outputInt;
-    }
-}
-
-function random() {
-    outputInt = randomNumber(0, 100);
-    output.textContent = outputInt;
-}
-
-function randomNumber(min, max) {
-    const num = Math.floor(Math.random() * (max - min + 1)) + min;
-    return num;
+// Update volume level display
+volumeControl.addEventListener("input", function() {
+  let value = parseInt(volumeControl.value);
+  if (value % 5 !== 0) {
+    value = Math.floor(value / 5) * 5;
+    volumeControl.value = value;
+    errorText.style.display = "block";
+    setTimeout(function() {
+      errorText.style.display = "none";
+    }, 1000);
+  } else {
+    volumeLevel.textContent = `${value}%`;
   }
+});
 
+// Handle slider movement
+volumeControl.addEventListener("mousedown", function() {
+  let currentValue = parseInt(volumeControl.value);
+  
+  document.addEventListener("mousemove", function() {
+    let newValue = parseInt(volumeControl.value);
+    if (newValue > currentValue + 3) {
+      volumeControl.value = currentValue + 3;
+      currentValue += 3;
+      volumeLevel.textContent = `${currentValue}%`;
+    } else if (newValue < currentValue - 5) {
+      volumeControl.value = currentValue - 5;
+      currentValue -= 5;
+      volumeLevel.textContent = `${currentValue}%`;
+    } else {
+      currentValue = newValue;
+    }
+  });
+});
 
-
-const output = document.querySelector('.output');
-let outputInt = parseInt(output.textContent);
-console.log(outputInt);
-
-const minusButton = document.querySelector('.minus-button').addEventListener('click', minus);
-const plusButton = document.querySelector('.plus-button').addEventListener('click', plus);
-const resetButton = document.querySelector('.reset-button').addEventListener('click', reset);
-const randomButton = document.querySelector('.random-button').addEventListener('click', random);
-const submitButton = document.querySelector('.submit-button').addEventListener('click', submit);
-
-
-/* const button = document.querySelector('.button');
-const output = document.querySelector('.output');
-let phone_content = document.querySelector('.phone');
-
-button.addEventListener('click', updateOutput);
-
-function updateOutput() {
-    output.textContent = phone_content.value;
-    alert(phone_content.value);
-}
-*/
-
-
-var slider = document.getElementById("myRange");
-var sliderSubmit = document.querySelector(".slider-submit-button").addEventListener('click', update);
-var sliderOutput = document.querySelector(".slider-output");
-
-
-// Update the current slider value (each time you drag the slider handle)
-function update() {
-  sliderOutput.textContent = slider.value;
-}
+// Stop slider movement on mouseup
+document.addEventListener("mouseup", function() {
+  document.removeEventListener("mousemove", function() {});
+});
