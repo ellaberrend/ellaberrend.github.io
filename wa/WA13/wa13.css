@@ -1,6 +1,7 @@
 .container {
     text-align: center;
     margin-top: 100px;
+    background-color: chartreuse;
   }
   
   h1 {
@@ -19,6 +20,7 @@
   #volume-level {
     font-size: 24px;
     margin-top: 10px;
+    background-color: chartreuse;
   }
   
   #error-text {
@@ -27,4 +29,6 @@
     color: red;
     display: none;
   }
+
+  
   
