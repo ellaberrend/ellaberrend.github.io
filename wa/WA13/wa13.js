@@ -2,7 +2,6 @@ const volumeControl = document.getElementById("volume");
 const volumeLevel = document.getElementById("volume-level");
 const errorText = document.getElementById("error-text");
 
-// Update volume level display
 volumeControl.addEventListener("input", function() {
   let value = parseInt(volumeControl.value);
   if (value % 5 !== 0) {
@@ -17,7 +16,6 @@ volumeControl.addEventListener("input", function() {
   }
 });
 
-// Handle slider movement
 volumeControl.addEventListener("mousedown", function() {
   let currentValue = parseInt(volumeControl.value);
   
