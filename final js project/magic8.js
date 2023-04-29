@@ -1,14 +1,11 @@
 function shakeMagic8Ball() {
-    // Get the user's question from the input field
     var question = document.getElementById("question").value;
-    
-    // If the user did not input a question, display an error message
+  
     if (question.trim() === "") {
       document.getElementById("answerText").innerHTML = "Please ask a question!";
       return;
     }
     
-    // Create an array of possible answers
     var answers = [
       "It is certain",
       "It is decidedly so",
@@ -28,23 +25,56 @@ function shakeMagic8Ball() {
       "Don't count on it",
       "Outlook not so good",
       "My sources say no",
-      "Very doubtful"
+      "Very doubtful",
+      "Why did you even ask that",
+      "That was a dumb question",
+      "Did you seriously need a Magic 8 Ball to answer that",
+      "Yes dummy",
+      "I don't answer stupid questions",
+      "I'd rather answer a good question",
+      "Um, duh..."
     ];
   
-    // Generate a random answer from the array
     var randomAnswer = answers[Math.floor(Math.random() * answers.length)];
   
-    // Display the answer within the webpage
     document.getElementById("answerText").innerHTML = randomAnswer;
+    showAnswer();
   }
   
-  // Get the magic 8 ball image element
-const magic8ballImg = document.querySelector('.magic8ball img');
-
-// Add the "shake" class to the magic 8 ball image element
-magic8ballImg.classList.add('shake');
-
-// Remove the "shake" class from the magic 8 ball image element after the animation completes
-setTimeout(function() {
-  magic8ballImg.classList.remove('shake');
-}, 500);
+  const magic8ballImg = document.querySelector('.magic8ball img');
+  
+  function shakeMagic8BallWithAnimation() {
+    magic8ballImg.classList.add('shake');
+    setTimeout(function() {
+      magic8ballImg.classList.remove('shake');
+    }, 500);
+  }
+  
+  document.getElementById("question").addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      shakeMagic8Ball();
+      shakeMagic8BallWithAnimation();
+    }
+  });
+  
+  document.querySelector("button").addEventListener("click", function() {
+    shakeMagic8Ball();
+    shakeMagic8BallWithAnimation();
+  });
+  
+  const answerElement = document.getElementById("answer");
+  
+  function showAnswer() {
+    answerElement.classList.add("show");
+    answerElement.classList.remove("rollup");
+    void answerElement.offsetWidth; // Trigger reflow to restart animation
+    answerElement.classList.add("rollup");
+  }
+  
+  function hideAnswer() {
+    answerElement.classList.remove("show");
+  }
+  
+  setTimeout(hideAnswer, 3000); // hide answer after 3 seconds
+  
