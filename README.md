@@ -1,9 +1,9 @@
 # ellaberrend.github.io
 
 ## <u>Projects<u>
-### - HTML
+### - <a href="ellaberrend.github.io/index.html"> HTML </a>
 ### - <a href= "https://ellaberrend.github.io/index.html"> CSS </a>
-### - JS
+### - <a href= "https://ellaberrend.github.io/final%20js%20project/magic8.html?question=does+pablo+love+him%3F"> JS </a>
 
 
 ## In-Class Assignments
